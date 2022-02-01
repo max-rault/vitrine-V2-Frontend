@@ -1,0 +1,26 @@
+stages:
+  - build
+  - deploy
+
+job:build:
+  stage: build
+  script: 
+    - cd /var/www/project-management-frontend
+    - git fetch --all
+    - git reset --hard origin/master
+    - git pull origin master
+    - yarn install
+  only:
+    - master
+
+
+job:deploy:
+  stage: deploy
+
+  script:
+    - cd /var/www/project-management-frontend
+    - npx browserslist@latest --update-db
+    - yarn build
+
+  only:
+    - master

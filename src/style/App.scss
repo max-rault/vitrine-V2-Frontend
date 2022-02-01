@@ -1,0 +1,725 @@
+[data-theme="dark"] {
+  --background-color: #202020;
+  --home-color-1: #ee0979;
+  --home-color-2: #ff6a00;
+  --home-color-3: #181818;
+
+  --carousel-apps-1: #200122;
+  --carousel-apps-2: #6f0000;
+  --carousel-apps-3: #181818;
+
+  --carousel-online-services-1: #f80759;
+  --carousel-online-services-2: #bc4e9c;
+  --carousel-online-services-3: #181818;
+
+  --carousel-docs-1: #c31432;
+  --carousel-docs-2: #240b36;
+  --carousel-docs-3: #181818;
+
+  --carousel-dot-color: #fff;
+
+  --detail-color: rgba(24,24,24,1);
+  --border-bottom: 1px #424242 solid;
+
+}
+
+[data-theme="light"] {
+
+  --background-color: #fff;
+
+  --home-color-1: #3ab0fd;
+  --home-color-2: #3ab0fd;
+  --home-color-3: #fff;
+
+  --carousel-apps-1: #2980B9;
+  --carousel-apps-2: #6DD5FA;
+  --carousel-apps-3: #FFFFFF;
+
+  --carousel-online-services-1: #56ab2f;
+  --carousel-online-services-2: #a8e063;
+  --carousel-online-services-3: #FFFFFF;
+
+  --carousel-docs-1: #CB3066;
+  --carousel-docs-2: #16BFFD;
+  --carousel-docs-3: #FFFFFF;
+
+  --carousel-dot-color: #181818;
+
+  --detail-color: rgb(255, 255, 255, 1);
+  --border-bottom: 1px #f0f0f0 solid;
+}
+
+html, body {
+  position: relative;
+  height: auto;
+  min-height: 100% !important;
+}
+#root {
+  height: 100%;
+}
+.App {
+  font-family: Arial, Helvetica, sans-serif;
+  // display: block;
+  // overflow: auto;
+  height: 100%;
+}
+
+.textLogoStyle {
+
+  background: linear-gradient(to right, #e96443 0%,  #904e95 100%);
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #aaaaaa #181818;
+
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  display: block;
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 10px; 
+}
+
+*::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #aaaaaa;
+  border-radius: 10px;
+  background-clip: padding-box
+  // border: 3px solid #181818;
+}
+
+.Login {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 200px;
+  // background: #fff;
+  box-shadow: -1px 2px 5px 1px rgb(0 0 0 / 70%);
+  border-radius: 4px;
+}
+
+.DetailContainer{
+
+  position: relative;
+} 
+
+.DetailBackground {
+ margin: none !important;
+ position: fixed;
+ height: 100%;
+}
+
+.detailsContentStyle{
+  top: 40rem;
+  width: 100%;
+  background: 
+    linear-gradient(to top, var(--detail-color) 72%,rgba(255,0,0,0) 100%);
+  position: absolute;
+
+}
+
+// .ant-card-cover {
+
+//   margin: 2em !important
+// }
+
+.cardListStyle {
+
+  text-align: center !important;
+  width: 15em !important;  
+  margin: auto !important;
+
+}
+
+.imageCardStyle {
+
+  width: 10em !important; 
+  margin: auto !important; 
+  padding-top: 2em !important;
+
+}
+
+.LogoRI {
+
+    max-width: 5em;
+    margin-left: 1em;
+}
+
+.LoginFeilds {
+
+  margin-left: 5em !important;
+  margin-right: 5em !important;
+
+}
+
+.LoginButtonContainer {
+
+  text-align: center;
+
+}
+
+.LoginButton {
+
+  margin-bottom: 1em !important;
+
+}
+
+.LayoutContainer {
+  position: inherit;
+  height: 100%;
+}
+
+.footerStyle{
+  text-align: center !important;
+  background-color: #1b1b1c !important;
+  color: #fff !important;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+.ant-form-item{
+  padding-right: 10px !important;
+  padding-top: 10px !important;
+}
+
+
+.dropDownParamsStyle{
+
+  width: 40rem;
+
+}
+
+.ant-checkbox-group{
+
+    display: inline-grid !important;
+    margin-right: 0;
+}
+
+.selectWithButton{
+  
+  width: 15em;
+  .ant-select-selector{
+   border-radius: 3em 0 0 3em !important;
+  }
+}
+.newButtonStyle {
+  border-radius: 0 3em 3em 0 !important;
+}
+
+.ProjectFormServices {
+
+  text-align: center;
+  margin-top: 1em;
+}
+
+.projectParamsRowButton {
+
+  float: right;
+
+}
+
+.projectParamsButton {
+
+  margin: 0 1em 1em 0;
+
+}
+
+.serviceDetails{
+  columns: 4 auto;
+}
+
+.CheckBoxStyle{
+
+  margin-top: 5em;
+}
+
+.UserDashboardStyle {
+  margin: 0;
+}
+
+.cardStyle{
+  margin-left: 5rem !important;
+  margin-right: 5rem !important;
+}
+
+.conatiner {
+  text-align: center !important;
+}
+
+.imgStyle{
+  max-width: 16rem;
+}
+
+.hometRow{
+  margin-top: 5em;
+}
+
+.ant-tabs {
+  height: 100%;
+}
+
+.ant-tabs-content-holder {
+  display: flex;
+}
+
+.ant-tabs-content-holder{
+
+  min-height: 89vh !important;
+}
+
+.RowSettingsList{
+  // background-color: #fff;
+  margin: 1em;
+}
+
+.ToolTipButton {
+  margin-left: 1em !important;
+}
+
+.List_Dashboard_Style {
+
+  margin: 0 3em 0 3em ;
+
+}
+
+.iconMenu{
+
+  transition: transform 1s;
+}
+
+.iconMenu:hover{
+    transform: rotate(180deg);
+}
+
+.RessourceFormStyle{
+      margin: 0rem 25% 0rem 25% !important;
+}
+
+.ButtonProjectForm {
+
+  text-align: center;
+}
+
+.ProfileHeader {
+
+  margin-bottom: 3em !important;
+
+}
+
+.newEmailForm {
+
+  margin-left: 5em !important;
+  margin-right: 5em !important;
+
+}
+
+.newEmailHeader {
+
+  margin-right: -2em !important;
+  margin-left: -2em !important;
+
+}
+
+.ListButton {
+
+  margin-left: 1em;
+
+}
+
+.SpinContainer {
+  margin: 0;
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  display: grid;
+  width: 50rem;
+  height: 50rem;
+  background: url('../../public/cloud.png') no-repeat;
+  background-size: cover;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 74px);
+
+  .AvatarStyle {
+    grid-column: 5 / 10;
+    grid-row: 6;
+ 
+  }
+}
+
+.ant-carousel .slick-dots li button {
+    display: block;
+    width: 100%;
+    height: 3px;
+    padding: 0;
+    color: transparent;
+    font-size: 0;
+    background: RGBA(102,102,102,1) !important;
+    border: 0;
+    border-radius: 1px;
+    outline: 0;
+    cursor: pointer;
+    opacity: .3;
+    transition: all .5s;
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+    background: var(--carousel-dot-color) !important;
+    opacity: 1;
+}
+
+.ant-steps-item-description {
+  max-width: 19em !important;
+}
+
+.StepsStyle {
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 2rem !important;
+  margin-bottom: 3rem !important;
+  width: 75% !important;
+
+}
+
+
+
+.CarouselApps {
+  align-items: center !important;
+  display: flex !important;
+  text-align: initial !important;
+  height: 45rem;
+  background: linear-gradient(to bottom, var(--carousel-apps-1), var(--carousel-apps-2), var(--carousel-apps-3) );
+  background-size: cover;
+  text-align: center;
+}
+
+.CarouselOnlineServices {
+  align-items: center !important;
+  display: flex !important;
+  text-align: initial !important;
+  height: 45rem;
+  background: linear-gradient(to bottom, var(--carousel-online-services-1), var(--carousel-online-services-2), var(--carousel-online-services-3) );
+  background-size: cover;
+  text-align: center;
+}
+
+.CarouselDocs {
+  align-items: center !important;
+  display: flex !important;
+  text-align: initial !important;
+  height: 45rem;
+  background: linear-gradient(to bottom, var(--carousel-docs-1), var(--carousel-docs-2), var(--carousel-docs-3) );
+  background-size: cover;
+  text-align: center;
+}
+
+.MaggyHomeContainer {
+  background: linear-gradient(to bottom, var(--home-color-1), var(--home-color-2), var(--home-color-3) );
+}
+
+.HomeContainer {
+  background: linear-gradient(to bottom, var(--home-color-1), var(--home-color-2), var(--home-color-3) );
+  position: absolute;
+  height: 75%;
+  width: 100%;
+
+  .AvatarStyle {
+
+    top: 25%;
+    margin: auto;
+    display: flex;
+    position: relative;
+  }
+
+  .MaggyHomeText {
+    text-align: center;
+    position: relative;
+    margin-top: 4em;
+  }
+  .HomeButtonStyle {
+
+    margin: auto;
+    display: block;
+
+  }
+}
+
+.HomeContainerData {
+  background: linear-gradient(to bottom, var(--home-color-1), var(--home-color-2), var(--home-color-3) );
+  height: 20em;
+  padding-top: 3em;
+  // .AvatarStyle {
+
+  //   // top: 15%;
+  //   margin: auto;
+  //   // display: flex;
+  //   // position: relative;
+  // }
+
+  .MaggyHomeText {
+    text-align: center;
+    margin-top: 1em;
+  }
+  .HomeButtonStyle {
+
+    margin: auto;
+    display: block;
+
+  }
+}
+
+
+.CenterRow {
+
+  justify-content: center;
+}
+
+.SpinStyle {
+
+ grid-column: 3 / 10;
+ grid-row: 10;
+
+}
+
+.MaggyTalk {
+
+width: 20em;
+height: 17em;
+grid-column: 6 / 10;
+grid-row: 4;
+
+}
+
+.MaggyText {
+
+grid-column: 7 / 10;
+grid-row: 5;
+color: #000;
+
+}
+
+.MaggyTextEmpty {
+
+  grid-column: 6 / 10;
+  grid-row: 5;
+  color: #000;
+
+}
+
+.ant-avatar.ant-avatar-icon {
+
+background: none ;
+
+} 
+
+.message {
+
+  max-width: 100px;
+
+}
+
+.PaginationStyle {
+
+    margin: 2em 1em 0 1em !important;
+    text-align: end !important;
+    padding-bottom: 2em !important;
+
+}
+
+.EmptyDataContainer {
+
+  height: 40em;
+
+}
+
+.MaggyHappyStyle {
+
+  background-color: #068a06 !important;
+
+}
+
+.MaggySadStyle {
+
+  background-color: #fa5e43 !important;
+}
+
+.SendMailButton {
+
+  margin-left: 1em;
+
+}
+
+.ProjectParamsButtonStyle {
+
+    float: right;
+    margin-bottom: 1em;
+
+}
+
+.CollapseStyle {
+    z-index: 999 !important;
+    margin-right: 2em !important;
+    margin-top: 2em !important;
+
+}
+
+.HeaderStyle {
+
+  .ant-page-header-heading{
+    align-self: start !important;
+    flex-direction: column !important;
+    margin-left: 2em !important;
+
+  }
+
+}
+
+.headerStyle {
+
+  background-color: #1b1b1c !important;
+
+}
+
+.ButtonProfileStyle{
+
+  float: right;
+  margin: 1.5em !important;
+  cursor: pointer;
+}
+
+.TitleProfileStyle {
+  margin: 2em 0em 2em 0em;
+}
+
+.HeaderProfileContainer {
+
+  justify-content: flex-end;
+  .ButtonProfileStyle{
+    cursor: default;
+  }
+}
+
+.ProgressBarContainer {
+
+  justify-content: center;
+  margin-bottom: 3em;
+  margin-top: 2em;
+}
+
+.ProfileDesc {
+
+  margin-Top: 1em !important;
+
+}
+
+.legendStyle {
+
+  width: 40px !important;
+  height: 12px !important;
+  border-radius: unset !important;
+
+}
+.SettingsTitle {
+
+  position: absolute; 
+  margin-top: 6em;
+  background: linear-gradient(to right, #e96443 0%,  #904e95 100%);
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.headerAppStyle {
+
+  // background-color: #fff !important;
+  padding: 0 !important;
+  border-bottom: var(--border-bottom);
+  min-height: 6em !important;
+  .ant-menu {
+    border: none !important;
+  } 
+
+  .ant-affix {
+    background-color: var(--background-color);
+    box-shadow: -1px 2px 5px 1px rgb(0 0 0 / 70%);
+    border-bottom: var(--border-bottom);
+    min-height: 6em !important;
+
+  }
+}
+
+.ButtonHeader {
+
+  .ant-input{
+    border-radius: 25px 0 0 25px !important;
+  }
+  .ant-input-search-button {
+    border-radius: 0 25px 25px 0 !important;
+  }
+  .ButtonContainer {
+  
+    text-align: left;
+
+    .ButtonStyle {
+      margin-left: 2em;
+    }
+  }
+}
+
+.updateMessageStyle {
+
+  text-align: center;
+  width: 35em;
+  margin-top: 2em !important;
+  box-shadow: -1px 2px 5px 1px rgb(0 0 0 / 70%);
+  margin: 0 auto !important;
+  position: fixed !important;
+  z-index: 1 !important;
+  left: 0 !important;
+  right: 0 !important;
+
+}
+
+.ant-tabs-tab {
+
+  justify-content: space-between;
+}
+
+.ColorPickerStyle {
+
+  width: 8em;
+  text-align: center;
+}
+
+.MenuButtonStyle {
+
+  cursor: pointer;
+  margin: 1em 0 2em 1em;
+  font-size: 16px;
+}
+
+.HeaderMenuButtonStyle{
+
+  cursor: pointer;
+  margin: 1em 0 2em 2em
+
+}
