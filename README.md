@@ -1,4 +1,4 @@
-# Project-Management (client)
+# Vitrine-V2 (client)
 
 To run this client you need :
 
